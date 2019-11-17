@@ -6,7 +6,7 @@
 /*   By: kbessa <kbessa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/03 23:17:49 by kbessa            #+#    #+#             */
-/*   Updated: 2019/11/09 21:13:43 by kbessa           ###   ########.fr       */
+/*   Updated: 2019/11/17 15:17:50 by kbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,7 @@ static void	fv1(int *a, int *b, t_stack *all, t_five *fff)
 	if (a[0] < b[1])
 		ft_pa(a, b, all);
 	else if (a[1] < b[1])
-	{
-		if (a[2] > a[1] && a[2] < b[1])
-		{
-			ft_ra(a, all);
-			ft_pa(a, b, all);
-		}
-		else
-		{
-			ft_rra(a, all);
-			ft_pa(a, b, all);
-		}
-	}
+		ft_from_fv1(a, b, all);
 	else if (a[2] < b[1])
 	{
 		ft_ra(a, all);
@@ -38,8 +27,8 @@ static void	fv1(int *a, int *b, t_stack *all, t_five *fff)
 	else
 		ft_pa(a, b, all);
 	fff->min = b[0];
-	fff->tmpasize = all->asize;///важно!!!
-	if(b[0] < a[0] && b[0] < a[1] && b[0] < a[2] && b[0] < a[3])
+	fff->tmpasize = all->asize;
+	if (b[0] < a[0] && b[0] < a[1] && b[0] < a[2] && b[0] < a[3])
 		ft_helpfive(a, b, all, fff);
 }
 

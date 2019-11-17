@@ -6,7 +6,7 @@
 /*   By: kbessa <kbessa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/03 23:15:16 by kbessa            #+#    #+#             */
-/*   Updated: 2019/11/09 18:47:05 by kbessa           ###   ########.fr       */
+/*   Updated: 2019/11/17 15:02:49 by kbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		ft_ifsorted(const int *a, t_stack *all)
 	int	i;
 	int	tmp;
 
-	if(all->asize == 1)
+	if (all->asize == 1)
 		exit(0);
 	tmpasize = all->asize;
 	i = tmpasize - 2;

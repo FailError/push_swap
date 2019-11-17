@@ -6,7 +6,7 @@
 /*   By: kbessa <kbessa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/02 23:20:24 by kbessa            #+#    #+#             */
-/*   Updated: 2019/11/09 22:36:21 by kbessa           ###   ########.fr       */
+/*   Updated: 2019/11/17 15:15:18 by kbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 int			main(int argc, char **argv)
 {
-
 	int		*a;
 	int		*b;
 	char	*s;
 	t_stack	all;
-	
+
 	a = NULL;
 	ft_bzero(&all, sizeof(t_stack));
 	if (argc == 1)

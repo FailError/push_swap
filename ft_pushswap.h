@@ -6,7 +6,7 @@
 /*   By: kbessa <kbessa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 19:55:14 by kbessa            #+#    #+#             */
-/*   Updated: 2019/11/04 19:58:21 by kbessa           ###   ########.fr       */
+/*   Updated: 2019/11/17 15:16:22 by kbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,8 @@ void					ft_doubleint(const int *tmp, t_stack *all);
 
 int						ft_forthree(int *a, t_stack *all);
 void					ft_forfive(int *a, int *b, t_stack *all);
-void 					ft_helpfive(int *a, int *b, t_stack *all, t_five *f);
+void					ft_helpfive(int *a, int *b, t_stack *all, t_five *f);
+void					ft_from_fv1(int *a, int *b, t_stack *all);
 
 int						ft_ifsorted1(const int *a, t_stack *all);
 void					printstack(int *a, int *b, t_stack *all);

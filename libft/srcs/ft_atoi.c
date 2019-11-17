@@ -6,7 +6,7 @@
 /*   By: kbessa <kbessa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 14:02:42 by kbessa            #+#    #+#             */
-/*   Updated: 2019/11/08 19:29:28 by kbessa           ###   ########.fr       */
+/*   Updated: 2019/11/17 15:29:45 by kbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,12 @@ static void				atoi3(unsigned long res, int minus)
 	}
 }
 
+static void				ft_error(void)
+{
+	ft_putstr("\x1B[31mError\033[0m\n");
+	exit(0);
+}
+
 int						ft_atoi(const char *str)
 {
 	unsigned long int	res;
@@ -71,11 +77,8 @@ int						ft_atoi(const char *str)
 		res = (res * 10) + (str[i] - '0');
 		i++;
 	}
-	if(i == 20 && res == 0)
-	{
-		ft_putstr("\x1B[31mError\033[0m\n");
-		exit(0);
-	}
+	if (i == 20 && res == 0)
+		ft_error();
 	atoi3(res, minus);
 	return ((int)(res * minus));
 }
