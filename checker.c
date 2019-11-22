@@ -6,7 +6,7 @@
 /*   By: kbessa <kbessa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/03 22:11:49 by kbessa            #+#    #+#             */
-/*   Updated: 2019/11/09 22:15:57 by kbessa           ###   ########.fr       */
+/*   Updated: 2019/11/22 18:04:31 by kbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,4 +107,6 @@ void		printstack(int *a, int *b, t_stack *all)
 		tmpbsize--;
 	}
 	printstack2(all);
+	usleep(10000);
+	system("clear");
 }
